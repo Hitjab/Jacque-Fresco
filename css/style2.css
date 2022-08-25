@@ -1,0 +1,223 @@
+@import url(../css/reset.css);
+.container{
+   width: 900px;
+   display: flex;
+   flex-direction: column;
+   background-color: rgb(216, 205, 205);
+   padding: 50px;
+}
+.chrckk{
+   display: flex;
+   flex-direction: column;
+}
+.inputs-text{
+   padding: 30px 0px ;
+   display: flex;
+   flex-direction: column;
+}
+.inputs-text input{
+   margin-top: 10px;
+   border:1px solid gray;
+   background-color: white;
+   padding: 5px 30px;
+   border-radius: 5px;
+   width: 150px;
+}
+.inputs-text input:valid{
+   border: 1px solid rgb(68, 139, 35);
+   color: rgb(68, 139, 35);
+   background:url(../image/valid.png) 95% 50% no-repeat;
+   background-size: 20px;
+}
+/* .inputs-text input:disabled{
+   border: 1px solid rgb(160, 175, 154);
+   color: rgb(207, 216, 202);
+   background:url(../image/valid.png) 95% 50% no-repeat;
+   background-size: 20px;
+} */
+.inputs-text input:invalid{
+   border: 1px solid rgb(250, 0, 62);
+   color: rgb(250, 0, 62);
+   background:url(../image/invalid.png) 95% 50% no-repeat;
+   background-size: 20px;
+}
+.switch {
+   position: relative;
+   display: inline-block;
+   width: 76px;
+   height: 34px;
+
+}
+.switch input {display:none;}
+.slider {
+   position: absolute;
+   cursor: pointer;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: #fff;
+   border:1px solid rgb(81, 255, 0);
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+ 
+ .slider:before {
+   position: absolute;
+   content: "";
+   height: 26px;
+   width: 32px;
+   left: 4px;
+   bottom: 4px;
+   background-color: rgb(81, 255, 0);
+   -webkit-transition: .4s;
+   transition: .4s;
+ }
+ 
+ input:checked + .slider {
+   background-color: white;
+   border:1px solid rgb(250, 0, 62);
+   
+ }
+ 
+ input:focus + .slider {
+   box-shadow: 0 0 1px #ffffff;
+   border: 1px solid rgb(81, 255, 0);
+ }
+ 
+ input:checked + .slider:before {
+   -webkit-transform: translateX(34px);
+   -ms-transform: translateX(34px);
+   transform: translateX(34px);
+   background-color: rgb(250, 0, 62);
+ }
+ 
+ /* Rounded sliders */
+ .slider.round {
+   border-radius: 10%;
+ }
+ 
+ .slider.round:before {
+   border-radius: 30%;
+ }
+ .box-switch{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+ }
+ .radio-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+.box-radio{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+    color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(81, 255, 0);
+    border-radius: 100%;
+    background: white;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background: rgb(81, 255, 0);
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.box-raidio-ip{
+   display: flex;
+   gap: 10px;
+}
+.btn-container{
+   margin-top: 30px;
+   display: flex;
+   gap: 20px;
+}
+.btn-btn{
+   padding: 10px 30px;
+   border-radius: 10px;
+   color: white;
+   cursor: pointer;
+}
+.ntb1{
+   background-color: rgb(8, 236, 8);
+}
+.ntb2{
+   background-color: rgb(46, 122, 46);
+}
+.ntb3{
+   background-color: rgb(238, 97, 196);
+}
+.ntb4{
+   background-color: rgb(104, 32, 47);
+}
+.ntb5{
+   background-color: rgb(107, 112, 107);
+}
+.ntb6{
+   background-color:rgb(110, 221, 58);
+   padding: 5px 10px;
+   border-radius: 40px;
+}
+.ntb7{
+   background-color:rgb(238, 97, 196);
+   padding: 5px 10px;
+   border-radius: 40px;
+}
+.areas{
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+   gap: 10px;
+}
+textarea{
+   border: 1px solid grey;
+   padding: 20px 30px;
+   max-width: 400px;
+}
+.btn-link{
+   position: absolute;
+   top: 89%;
+}

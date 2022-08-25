@@ -1,0 +1,56 @@
+@import url(./reset.css);
+.container {
+   max-width: 600px;
+   border:1px solid red;
+   padding: 30px;
+   background-color: antiquewhite;
+   background-color: rgb(136, 201, 201);
+   position: relative;
+   margin-left: 300px;
+}
+.cvv {
+   display: flex;
+}
+.cvv input{
+   width: 100px;
+}
+.box{
+   width: 90%;
+   position: absolute;
+   left: 0;
+   margin-left: -30px;
+   padding: 15px;
+   background-color: rgb(247, 134, 29);
+   top: 15px;
+}
+h1{
+   color: white;
+}
+form {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   margin-top: 40px;
+   background: url(/naavu.PNG) 100% 100% no-repeat;
+   background-size: 150px 150px;
+}
+input{
+   margin-bottom: 20px;
+   background-color: rgb(116, 196, 196);
+   color: beige;
+   max-width: 330px;
+   padding: 10px 30px;
+   border-bottom: 3px solid rgba(37, 54, 46, 0.315);
+}
+
+.two{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-left: 30px;
+}
+.one{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
